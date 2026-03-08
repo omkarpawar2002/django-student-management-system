@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>VIEW STUDENT</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'student_app/css/view_student.css' %}">
+{% endblock %}
+
+{% block content %}
+<table class="table table-striped table-primary">
+    <thead>
+        <tr>
+            <th>ROLL</th>
+            <th>F_NAME</th>
+            <th>L_NAME</th>
+            <th>CITY</th>
+            <th>AGE</th>
+            <th>DOB</th>
+            <th>GENDER</th>
+            <th>MOBILE NO</th>
+            <th>LANGUAGE</th>
+            <!-- <th>ADDRESS</th> -->
+            <th>EMAIL</th>
+            <th>PASSWORD</th>
+            <th>ACTIONS</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr>
+            <td>{{record.roll}}</td>
+            <td>{{record.first_name}}</td>
+            <td>{{record.last_name}}</td>
+            <td>{{record.city}}</td>
+            <td>{{record.age}}</td>
+            <td>{{record.dob}}</td>
+            <td>{{record.gender}}</td>
+            <td>{{record.mobile_no}}</td>
+            <td>{{record.fav_language}}</td>
+            <!-- <td>{{record.address}}</td> -->
+            <td>{{record.email}}</td>
+            <td>{{record.password}}</td>
+            <td>
+                <a href="{% url 'update_student' record.id %}"><button class="btn btn-warning btn-small me-2"
+                        type="button">Update</button></a>
+                <a href="{% url 'delete_student' record.id %}"><button class="btn btn-danger btn-small me-2"
+                        type="button">Delete</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+media/
+
+# MySQL dumps (if any)
+*.sql
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Static files (collected)
+staticfiles/
+
+# Migrations cache
+*/migrations/__pycache__/
+
+# Python build files
+build/
+dist/
+*.egg-info/

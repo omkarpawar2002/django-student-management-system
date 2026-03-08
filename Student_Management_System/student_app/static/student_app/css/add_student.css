@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #2ea2fe;
+    margin-top: 20px;
+}
