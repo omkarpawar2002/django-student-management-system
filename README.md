@@ -54,30 +54,37 @@ django-student-management-system
 Follow these steps to run the project locally.
 
 ### 1️⃣ Clone the Repository
-
+```
 git clone https://github.com/omkarpawar2002/django-student-management-system.git
+```
 
 ### 2️⃣ Navigate to the Project Folder
-
+```
 cd django-student-management-system
+```
 
 ### 3️⃣ Create Virtual Environment
-
+```
 python -m venv venv
+```
 
 ### 4️⃣ Activate Virtual Environment
-
-Windows:
+## Windows:
+```
 venv\Scripts\activate
+```
 
-Mac/Linux:
+## Mac/Linux:
+```
 source venv/bin/activate
+```
 
 ### 5️⃣ Install Dependencies
-
+```
 pip install -r requirements.txt
+```
 
-### 6️⃣ Configure MySQL Database
+<!-- ### 6️⃣ Configure MySQL Database
 
 Update the database settings in:
 
@@ -94,20 +101,26 @@ DATABASES = {
 'HOST': 'localhost',
 'PORT': '3306',
 }
-}
+} -->
 
 ### 7️⃣ Apply Migrations
-
+```
 python manage.py makemigrations
+```
+
+```
 python manage.py migrate
+```
 
 ### 8️⃣ Run the Development Server
-
+```
 python manage.py runserver
+```
 
-Now open your browser and go to:
-
+## Now open your browser and go to:
+```
 http://127.0.0.1:8000/
+```
 
 ---
 
