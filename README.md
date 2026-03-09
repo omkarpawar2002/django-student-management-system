@@ -126,14 +126,25 @@ http://127.0.0.1:8000/
 
 ## 📸 Screenshots
 
-You can add screenshots of the project interface here.
+### 🔐 Sign In Page
+![Sign In](screenshots/signin.png)
 
-Example:
+### 📝 Sign Up Page
+![Sign Up](screenshots/signup.png)
 
-screenshots/
-├── login_page.png
-├── dashboard.png
-└── student_list.png
+### ➕ Add Student
+![Add Book](screenshots/add_student_part1.png)
+![Add Book](screenshots/add_student_part2.png)
+
+### 📖 View Student
+![View Books](screenshots/view_student.png)
+
+### ✏️ Update Student
+![Update Book](screenshots/update_student_part1.png)
+![Update Book](screenshots/update_student_part2.png)
+
+### ❌ Delete Student
+![Delete Book](screenshots/delete_student.png)
 
 ---
 
